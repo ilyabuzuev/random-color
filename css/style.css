@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --box-size: 320px;
+  --color-bg-dark: #08173d;
+  --color-bg: #0c2461;
+  --color-bg-button: #6a89cc;
+  --color-bg-button-hover: #4a69bd;
+  --color-bg-button-active: #3351a1;
+  --color-text-button: #1e3799;
+  --color-box-border: #1e3799;
+  --color-box-shadow: #0a1230;
+  --color-color-text: #fff;
+  --color-heading-text: #fff;
+  --color-name-text: #e2e2e2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button-reset {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.list-reset {
+  list-style-type: none;
+}
+
+.page {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page__body {
+  background-color: var(--color-bg);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 7fr minmax(300px, 2fr);
+  grid-template-rows: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box */
+.box {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.box__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--box-size);
+  height: var(--box-size);
+  border: 3px solid var(--color-box-border);
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px 2px var(--color-box-shadow);
+}
+
+.box__color {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-color-text);
+}
+
+.box__button {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-button);
+  border-radius: 5px;
+  background-color: var(--color-bg-button);
+  transition: background-color .2s ease;
+}
+
+.box__button:hover {
+  background-color: var(--color-bg-button-hover);
+}
+
+.box__button:active {
+  background-color: var(--color-bg-button-active);
+}
+
+/* History */
+.history {
+  height: 100%;
+  background-color: var(--color-bg-dark);
+}
+
+.history__heading {
+  padding: 20px;
+  margin-bottom: 10px;
+  color: var(--color-heading-text);
+}
+
+.history__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0px 20px 20px 20px;
+  background-color: var(--color-bg-dark);
+}
+
+.color__box {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.color__name {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-name-text);
+}
